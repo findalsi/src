@@ -1,4 +1,4 @@
-
+<?php include "header.php" ?>;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,3 +67,4 @@ $g3 = 5;
 <img src="images/docker.png" alt="web development environment">
 </body>
 </html>
+<?php include "footer.php" ?>;
