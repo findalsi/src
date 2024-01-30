@@ -1,0 +1,33 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(images/background.jpg );
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.container
+{
+    width: 1200px;
+    margin: 16px auto;
+}
+h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 14px;
+}
+.btn
+{
+    background-color: blue;
+    border-color: blue;
+}
+.btn:hover
+{
+    background-color: darkblue;
+    border-color:darkblue; 
+}
