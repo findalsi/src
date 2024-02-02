@@ -18,8 +18,9 @@
         <div class="col-md-8">
           <nav>
             <a href="ex1.php">Ex1</a>
-            <a href="new.php">New</a>
+            <a href="new.php">Ex2</a>
             <a href="ex3.php">Ex3</a>
+            <a href="ex4.php">Ex4</a>
           </nav>
         </div>
       </div>

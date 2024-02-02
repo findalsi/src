@@ -1,4 +1,4 @@
-<footer class="row">
+<footer class="row mt-5">
     <div class="col-md-4">&copy;Dalsi Samarathunga</div>
     <div class="col-md-4"> Course: Web Development</div>
     <div class="col-md-4"> HAMK</div> 
