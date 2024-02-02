@@ -86,8 +86,53 @@ print ($direct_text . $sum_total);
 
 ?>
 
-<h2>Browser Detection: Write a PHP script to detect the browser being used to view your pages. 
+<h2>7. Browser Detection: Write a PHP script to detect the browser being used to view your pages. 
     Hint: Use predefined variables: $_SERVER). Predefined Variables</h2>
+
+    <?php
+if(strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {
+    echo " Internet explorer";
+}
+elseif(strpos( $_SERVER['HTTP_USER_AGENT'], 'Trident') !== FALSE) {
+    echo " Internet explorer";
+}
+elseif(strpos( $_SERVER['HTTP_USER_AGENT'], 'Firefox') !== FALSE) {
+    echo " Firefox";
+}
+elseif(strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome') !== FALSE) {
+    echo " Chrome";
+}
+elseif(strpos( $_SERVER['HTTP_USER_AGENT'], 'Oper Mini') !== FALSE) {
+    echo " Opera mini";
+}
+elseif(strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari') !== FALSE) {
+    echo " Safari";
+}
+elseif(strpos( $_SERVER['HTTP_USER_AGENT'], 'Opera') !== FALSE) {
+    echo " Opera";
+}
+else {
+    echo "something else";
+}
+?>
+
+<h2>8. File Modification Time: Write a PHP script in the footer section of your universal footer to 
+    display the last modification time of a file. 
+    Hint: Use predefined variable $_SERVER, basename function  to get the filename , 
+    filetime function to get the last modified time & date function to print the date and time</h2>
+    
+
+   
+
+
+
+
+
+
+
+
+
+
 
 
 
