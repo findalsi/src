@@ -6,13 +6,9 @@ include "header.php"; ?>
     Use the echo statement to print “Hello [Firstname] [Lastname], You are welcome to my site.” inside an h3 tag. </h2>
 <h2>3.Bootstrap Styling: Apply Bootstrap styles to the form. 
     Make sure to include the Bootstrap CSS link in your head tag.</h2>
-<?php
-echo "<h3>Hello [Firstname] [Lastname], You are welcome to my site.</h3>";
-?>
 
-
-    
-<form>
+  
+<form method="POST">
     <div class="form1">
         <label for="fnimi">Firstname:</label>
         <input type="text" class="form-control" id="fnimi" name="fnimi">
@@ -21,7 +17,18 @@ echo "<h3>Hello [Firstname] [Lastname], You are welcome to my site.</h3>";
     <div class="form1">
         <label for="lnimi">Lastname:</label>
         <input type="text" class="form-control" id="lnimi" name="lnimi">
+        <input type="submit" value="Display" name="submit">
     </div>
+    <?php
+      
+    if (isset($_POST['submit'])) { 
+
+        $fnimi = $_POST['fnimi']; 
+        $lnimi = $_POST['lnimi']; 
+  
+        echo "<h3>Hello $fnimi $lnimi, You are welcome to my site.</h3>"; 
+    } 
+?>
 
 <h2>4. HTML Table: Prepare a simple HTML table and apply Bootstrap styles to it. 
     Note, you have already done a table in Exercise 1. 
