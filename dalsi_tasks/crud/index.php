@@ -1,5 +1,5 @@
 <?php
-$title = "Create Data";
+$title = "CreateData";
 include '../header.php';?>
 
 <h2> Input your information below: </h2>
