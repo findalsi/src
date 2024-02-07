@@ -8,6 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .create-data-link {
+            color: #28a745; 
+        }
+
+        
+        .read-data-link {
+            color: #28a745;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -22,5 +33,13 @@
             <a href="ex3.php">Ex3</a>
             <a href="ex4.php">Ex4</a>
           </nav>
+        
+          <nav>
+            <a href="../crud/index.php" class="create-data-link">Create Data</a>
+            <a href="../crud/read.php" class="read-data-link">Read Data</a>
+          </nav>
         </div>
       </div>
+    </div>
+</body>
+</html>
