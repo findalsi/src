@@ -2,7 +2,7 @@
 $title = "CreateData";
 include '../header.php';?>
 
-<h2> Input your information below: </h2>
+<h2> Input Your Information Below: </h2>
 <form name= "form1" method="post" action="process.php">
   <div class="row">
     <div class="col">
