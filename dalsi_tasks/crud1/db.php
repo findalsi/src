@@ -1,9 +1,9 @@
 <?php
 // shell.hamk.fi >>> localhost
-$servername = "php24-db-1";
-$username = "crud_app";
-$password = "password";
-$dbname = "crud_app";
+$servername = "localhost";
+$username = "dalsi23000";
+$password = "6Ad3ICbv";
+$dbname = "wp_dalsi23000";
 // create database connection
 $conn = new mysqli($servername,$username,$password,$dbname);
 //check connection
