@@ -1,6 +1,6 @@
 <?php
 $title = "Gift Card Purchase";
-include "header.php";
+include_once '../myFeature/header.php';
 ?>
 
 <!-- Gift Card Purchase Form -->
@@ -44,5 +44,5 @@ include "header.php";
 </div>
 
 <?php
-include '../project22/footer.php';
+include '../myFeature/header.php';
 ?>
