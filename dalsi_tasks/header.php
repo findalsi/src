@@ -37,6 +37,7 @@
           <nav>
             <a href="../crud/index.php" class="create-data-link">Create Data</a>
             <a href="../crud/read.php" class="read-data-link">Read Data</a>
+            <a href="../crud/updatesingle.php" class="update-data-link">Update Data</a>
           </nav>
         </div>
       </div>
