@@ -35,6 +35,7 @@ include_once '../myFeature/header.php';
 
                         <div class="text-center">
                             <button type="submit" class="btn btn-dark">Purchase Gift Card</button>
+                           
                         </div>
                     </form>
                 </div>
@@ -44,5 +45,5 @@ include_once '../myFeature/header.php';
 </div>
 
 <?php
-include '../myFeature/header.php';
+include '../myFeature/footer.php';
 ?>
