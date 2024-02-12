@@ -17,6 +17,7 @@ include_once '../myFeature/header.php';
                             <label for="recipientName" class="form-label">Recipient's Name:</label>
                             <input type="text" class="form-control" id="recipientName" name="recipientName" required>
                         </div>
+                        <span id = "nameError"></span>
 
                         <div class="mb-3">
                             <label for="recipientEmail" class="form-label">Recipient's Email:</label>
@@ -43,7 +44,28 @@ include_once '../myFeature/header.php';
         </div>
     </div>
 </div>
+<script>
+// function to validate name
+function validateName() {
+    const recipientName = document.getElementById('recipientName').value;
+    const nameError = document.getElementById("nameError");
 
+    if (recipientName.length < 3 || recipientName.length > 20) {
+        nameError.innerHTML = "Name must be between 3 and 20 characters";
+        return false;
+    } else {
+        nameError.innerHTML = "";
+        return true;
+    }
+}
+
+
+
+
+
+// event listeners for real time validation
+document.getElementById("recipientName").addEventListener("input", validateName);
+</script>
 <?php
 include '../myFeature/footer.php';
 ?>

@@ -23,8 +23,9 @@
     <p class="text3"> © 2024 Team 22. All Rights Reserved</p>
   </div> 
   <div class = "col-md-2">
-    <img class="image1" src="images/6461a879ec4f7b211e258299_icons8-facebook-150.webp"/>
-    <img class="image2" src="images/6461a8f6307e9e4f6f61a2d8_icons8-instagram-150 (1).webp"/>
+  <img class="image1" src="myFeature/images/6461a879ec4f7b211e258299_icons8-facebook-150.webp" />
+  <img class="image2" src="myFeature/images/6461a8f6307e9e4f6f61a2d8_icons8-instagram-150 (1).webp" />
+
     <div class = "col-md-2"></div>
 </div>
 </div>
