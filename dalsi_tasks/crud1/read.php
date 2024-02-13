@@ -50,6 +50,5 @@ if ($result->num_rows > 0) {
 // Include footer
 include '../myFeature/footer.php';
 
-// Close the connection when done
 $conn->close();
 ?>

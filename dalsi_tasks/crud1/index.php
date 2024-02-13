@@ -23,7 +23,7 @@ include_once '../myFeature/header.php';
                             <label for="recipientEmail" class="form-label">Recipient's Email:</label>
                             <input type="email" class="form-control" id="recipientEmail" name="recipientEmail" required>
                         </div>
-
+                        <span id = "emailError"></span>
                         <div class="mb-3">
                             <label for="amount" class="form-label">Amount:</label>
                             <input type="number" class="form-control" id="amount" name="amount" step="0.01" required>
@@ -51,7 +51,7 @@ function validateName() {
     const nameError = document.getElementById("nameError");
 
     if (recipientName.length < 3 || recipientName.length > 20) {
-        nameError.innerHTML = "Name must be between 3 and 20 characters";
+        nameError.innerHTML = "<span style='color: red;'>Name must be between 3 and 20 characters</span>";
         return false;
     } else {
         nameError.innerHTML = "";
@@ -59,12 +59,26 @@ function validateName() {
     }
 }
 
+// function to validate email
+function validateEmail() {
+    const recipientEmail = document.getElementById('recipientEmail').value;
+    const emailError = document.getElementById("emailError");
 
+    // Check if the email is not empty and contains @
+    if (recipientEmail.trim() === "" || !recipientEmail.includes("@")) {
+        emailError.innerHTML = "<span style='color: red;'>Enter a valid email address</span>";
+        return false;
+    } else {
+        emailError.innerHTML = "";
+        return true;
+    }
+}
 
 
 
 // event listeners for real time validation
 document.getElementById("recipientName").addEventListener("input", validateName);
+document.getElementById("recipientEmail").addEventListener("input", validateEmail);
 </script>
 <?php
 include '../myFeature/footer.php';
