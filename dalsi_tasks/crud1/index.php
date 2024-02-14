@@ -1,6 +1,7 @@
 <?php
 $title = "Gift Card Purchase";
 include_once '../myFeature/header.php';
+include "db.php";
 ?>
 
 <!-- Gift Card Purchase Form -->
@@ -15,7 +16,7 @@ include_once '../myFeature/header.php';
                     <form id="giftCardForm" action="process_gift_card.php" method="post">
                         <div class="mb-3">
                             <label for="recipientName" class="form-label">Recipient's Name:</label>
-                            <input type="text" class="form-control" id="recipientName" name="recipientName" required>
+                            <input type="text" class="form-control" id="recipientName" name="recipientName" required minlength="3" maxlength="30">
                         </div>
                         <span id = "nameError"></span>
 
@@ -26,7 +27,7 @@ include_once '../myFeature/header.php';
                         <span id = "emailError"></span>
                         <div class="mb-3">
                             <label for="amount" class="form-label">Amount:</label>
-                            <input type="number" class="form-control" id="amount" name="amount" step="0.01" required>
+                            <input type="number" class="form-control" id="amount" name="amount" step="0.01" required min = "0.01" max = "1000">
                         </div>
 
                         <div class="mb-3">
@@ -65,7 +66,7 @@ function validateEmail() {
     const emailError = document.getElementById("emailError");
 
     // Check if the email is not empty and contains @
-    if (recipientEmail.trim() === "" || !recipientEmail.includes("@")) {
+    if (recipientEmail === "" || !recipientEmail.includes("@")) {
         emailError.innerHTML = "<span style='color: red;'>Enter a valid email address</span>";
         return false;
     } else {
