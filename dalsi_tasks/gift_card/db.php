@@ -1,5 +1,5 @@
 <?php
-// shell.hamk.fi >>> localhost
+//  localhost
 $servername = "php24-db-1";
 $username = "crud_app";
 $password = "password";
